@@ -15,6 +15,8 @@
 		491DDC9A1CD0978000055C96 /* CaresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DDC991CD0978000055C96 /* CaresTests.swift */; };
 		491DDCA51CD0978000055C96 /* CaresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DDCA41CD0978000055C96 /* CaresUITests.swift */; };
 		495BC8EF1CD2150000339CE1 /* MapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BC8EE1CD2150000339CE1 /* MapkitViewController.swift */; };
+		49F6ECDF1CD3379E001C956D /* Kumulos_ARMv7-Combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F6ECDB1CD3379E001C956D /* Kumulos_ARMv7-Combined.a */; };
+		49F6ECE01CD3379E001C956D /* Kumulos.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F6ECDD1CD3379E001C956D /* Kumulos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		491DDCA41CD0978000055C96 /* CaresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaresUITests.swift; sourceTree = "<group>"; };
 		491DDCA61CD0978000055C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495BC8EE1CD2150000339CE1 /* MapkitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapkitViewController.swift; sourceTree = "<group>"; };
+		49F6ECDA1CD3379D001C956D /* Cares-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cares-Bridging-Header.h"; sourceTree = "<group>"; };
+		49F6ECDB1CD3379E001C956D /* Kumulos_ARMv7-Combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "Kumulos_ARMv7-Combined.a"; sourceTree = "<group>"; };
+		49F6ECDC1CD3379E001C956D /* Kumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kumulos.h; sourceTree = "<group>"; };
+		49F6ECDD1CD3379E001C956D /* Kumulos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kumulos.m; sourceTree = "<group>"; };
+		49F6ECDE1CD3379E001C956D /* libKumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libKumulos.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F6ECDF1CD3379E001C956D /* Kumulos_ARMv7-Combined.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +107,7 @@
 		491DDC831CD0977F00055C96 /* Cares */ = {
 			isa = PBXGroup;
 			children = (
+				49F6ECD91CD33755001C956D /* KumulosAPI */,
 				495BC8ED1CD214DF00339CE1 /* ViewControllers */,
 				491DDC841CD0977F00055C96 /* AppDelegate.swift */,
 				491DDC861CD0977F00055C96 /* ViewController.swift */,
@@ -134,6 +143,18 @@
 				495BC8EE1CD2150000339CE1 /* MapkitViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		49F6ECD91CD33755001C956D /* KumulosAPI */ = {
+			isa = PBXGroup;
+			children = (
+				49F6ECDB1CD3379E001C956D /* Kumulos_ARMv7-Combined.a */,
+				49F6ECDC1CD3379E001C956D /* Kumulos.h */,
+				49F6ECDD1CD3379E001C956D /* Kumulos.m */,
+				49F6ECDE1CD3379E001C956D /* libKumulos.h */,
+				49F6ECDA1CD3379D001C956D /* Cares-Bridging-Header.h */,
+			);
+			name = KumulosAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F6ECE01CD3379E001C956D /* Kumulos.m in Sources */,
 				495BC8EF1CD2150000339CE1 /* MapkitViewController.swift in Sources */,
 				491DDC871CD0977F00055C96 /* ViewController.swift in Sources */,
 				491DDC851CD0977F00055C96 /* AppDelegate.swift in Sources */,
@@ -411,10 +433,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Cares/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cares",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MyApplication.Cares;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cares/Cares-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -422,10 +451,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Cares/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cares",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = MyApplication.Cares;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cares/Cares-Bridging-Header.h";
 			};
 			name = Release;
 		};
