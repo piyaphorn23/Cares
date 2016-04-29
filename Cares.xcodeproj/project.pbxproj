@@ -17,6 +17,9 @@
 		495BC8EF1CD2150000339CE1 /* MapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BC8EE1CD2150000339CE1 /* MapkitViewController.swift */; };
 		49F6ECDF1CD3379E001C956D /* Kumulos_ARMv7-Combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F6ECDB1CD3379E001C956D /* Kumulos_ARMv7-Combined.a */; };
 		49F6ECE01CD3379E001C956D /* Kumulos.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F6ECDD1CD3379E001C956D /* Kumulos.m */; };
+		49F6ECEC1CD37C18001C956D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6ECEB1CD37C18001C956D /* TableViewCell.swift */; };
+		49F6ECEE1CD37E6B001C956D /* SickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6ECED1CD37E6B001C956D /* SickViewController.swift */; };
+		49F6ECF01CD37F6F001C956D /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F6ECEF1CD37F6F001C956D /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		49F6ECDC1CD3379E001C956D /* Kumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kumulos.h; sourceTree = "<group>"; };
 		49F6ECDD1CD3379E001C956D /* Kumulos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kumulos.m; sourceTree = "<group>"; };
 		49F6ECDE1CD3379E001C956D /* libKumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libKumulos.h; sourceTree = "<group>"; };
+		49F6ECEB1CD37C18001C956D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		49F6ECED1CD37E6B001C956D /* SickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SickViewController.swift; sourceTree = "<group>"; };
+		49F6ECEF1CD37F6F001C956D /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				495BC8EE1CD2150000339CE1 /* MapkitViewController.swift */,
+				49F6ECEB1CD37C18001C956D /* TableViewCell.swift */,
+				49F6ECED1CD37E6B001C956D /* SickViewController.swift */,
+				49F6ECEF1CD37F6F001C956D /* NewViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -288,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F6ECEC1CD37C18001C956D /* TableViewCell.swift in Sources */,
 				49F6ECE01CD3379E001C956D /* Kumulos.m in Sources */,
+				49F6ECF01CD37F6F001C956D /* NewViewController.swift in Sources */,
 				495BC8EF1CD2150000339CE1 /* MapkitViewController.swift in Sources */,
 				491DDC871CD0977F00055C96 /* ViewController.swift in Sources */,
+				49F6ECEE1CD37E6B001C956D /* SickViewController.swift in Sources */,
 				491DDC851CD0977F00055C96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
