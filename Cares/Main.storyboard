@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="dHJ-IN-4hd">
             <objects>
-                <viewController id="NwR-3o-MyG" sceneMemberID="viewController">
+                <viewController id="NwR-3o-MyG" customClass="LoginViewController" customModule="Cares" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z1k-TH-JHr"/>
                         <viewControllerLayoutGuide type="bottom" id="bdq-nx-5x8"/>

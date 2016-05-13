@@ -11,6 +11,9 @@
 		490D43831CE1E7570079B9E4 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D43821CE1E7570079B9E4 /* FirstTableViewController.swift */; };
 		490D43851CE1EEF40079B9E4 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D43841CE1EEF40079B9E4 /* SecondTableViewController.swift */; };
 		490D43871CE1F1D00079B9E4 /* SecondTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D43861CE1F1D00079B9E4 /* SecondTable.swift */; };
+		4915E80D1CE4BE3600DCE850 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4915E80B1CE4BE3600DCE850 /* FBSDKCoreKit.framework */; };
+		4915E80E1CE4BE3600DCE850 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4915E80C1CE4BE3600DCE850 /* FBSDKLoginKit.framework */; };
+		4915E8101CE4BECF00DCE850 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915E80F1CE4BECF00DCE850 /* LoginViewController.swift */; };
 		491DDC851CD0977F00055C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DDC841CD0977F00055C96 /* AppDelegate.swift */; };
 		491DDC871CD0977F00055C96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DDC861CD0977F00055C96 /* ViewController.swift */; };
 		491DDC8C1CD0977F00055C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491DDC8B1CD0977F00055C96 /* Assets.xcassets */; };
@@ -47,6 +50,9 @@
 		490D43821CE1E7570079B9E4 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		490D43841CE1EEF40079B9E4 /* SecondTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
 		490D43861CE1F1D00079B9E4 /* SecondTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTable.swift; sourceTree = "<group>"; };
+		4915E80B1CE4BE3600DCE850 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		4915E80C1CE4BE3600DCE850 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		4915E80F1CE4BECF00DCE850 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		491DDC811CD0977F00055C96 /* Cares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cares.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491DDC841CD0977F00055C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		491DDC861CD0977F00055C96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F6ECDF1CD3379E001C956D /* Kumulos_ARMv7-Combined.a in Frameworks */,
+				4915E80D1CE4BE3600DCE850 /* FBSDKCoreKit.framework in Frameworks */,
+				4915E80E1CE4BE3600DCE850 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +107,8 @@
 		491DDC781CD0977F00055C96 = {
 			isa = PBXGroup;
 			children = (
+				4915E80B1CE4BE3600DCE850 /* FBSDKCoreKit.framework */,
+				4915E80C1CE4BE3600DCE850 /* FBSDKLoginKit.framework */,
 				491DDC831CD0977F00055C96 /* Cares */,
 				491DDC981CD0978000055C96 /* CaresTests */,
 				491DDCA31CD0978000055C96 /* CaresUITests */,
@@ -159,6 +169,7 @@
 				490D43821CE1E7570079B9E4 /* FirstTableViewController.swift */,
 				490D43841CE1EEF40079B9E4 /* SecondTableViewController.swift */,
 				490D43861CE1F1D00079B9E4 /* SecondTable.swift */,
+				4915E80F1CE4BECF00DCE850 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -316,6 +327,7 @@
 				495BC8EF1CD2150000339CE1 /* MapkitViewController.swift in Sources */,
 				491DDC871CD0977F00055C96 /* ViewController.swift in Sources */,
 				491DDC851CD0977F00055C96 /* AppDelegate.swift in Sources */,
+				4915E8101CE4BECF00DCE850 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +462,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Cares/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -468,6 +484,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Cares/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
