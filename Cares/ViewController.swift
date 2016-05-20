@@ -26,17 +26,24 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonSignUp_OnClick() {
-        if txtPassword.text == txtConfirmPassword.text {
-            let kumuAPI = Kumulos()
-            kumuAPI.createUserWithUsername(txtUsername.text, andPassword: txtPassword.text, andEmail: txtEmail.text, andAuthData: "test")
-            var alert: UIAlertView = UIAlertView(title: "Signup Success!!!", message: "", delegate: self, cancelButtonTitle: "Ok")
+        if(txtUsername.text == "" || txtEmail.text == "" || txtPassword.text == "" || txtConfirmPassword.text == ""){
+            var alert: UIAlertView = UIAlertView(title: "Signup Failed!!", message: "Please enter Data", delegate: self, cancelButtonTitle: "Ok")
             
             alert.show()
         }
         else{
-            var alert: UIAlertView = UIAlertView(title: "Sorry!", message: "Password not match", delegate: self, cancelButtonTitle: "Ok")
+            if txtPassword.text == txtConfirmPassword.text {
+                let kumuAPI = Kumulos()
+                kumuAPI.createUserWithUsername(txtUsername.text, andPassword: txtPassword.text, andEmail: txtEmail.text, andAuthData: "test")
+                var alert: UIAlertView = UIAlertView(title: "Signup Success!!!", message: "", delegate: self, cancelButtonTitle: "Ok")
             
-            alert.show()
+                alert.show()
+            }
+            else{
+                var alert: UIAlertView = UIAlertView(title: "Sorry!", message: "Password not match", delegate: self, cancelButtonTitle: "Ok")
+            
+                alert.show()
+            }
         }
     }
     

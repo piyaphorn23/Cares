@@ -159,13 +159,13 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, KumulosDe
         }
         if(count_username == 1 || count_password == 2)
         {
-            let alertController = UIAlertController(title: "Invalid", message: "Invalid a Username or Password", preferredStyle: UIAlertControllerStyle.Alert);
+            let alertController = UIAlertController(title: "Invalid", message: "Incorrect a Username or Password", preferredStyle: UIAlertControllerStyle.Alert);
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
         }
         if(count_username == 0 || count_password == 0)
         {
-            let alertController = UIAlertController(title: "Invalid", message: "Invalid a Username or Password", preferredStyle: UIAlertControllerStyle.Alert);
+            let alertController = UIAlertController(title: "Invalid", message: "Incorrect a Username or Password", preferredStyle: UIAlertControllerStyle.Alert);
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
         }

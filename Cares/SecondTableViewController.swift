@@ -42,4 +42,15 @@ class SecondTableViewController: UITableViewController {
         
     }
     
+    /*func colorForIndex(index: Int) -> UIColor {
+        let itemCount = SecondArray.count - 1
+        let color = (CGFloat(index) / CGFloat(itemCount)) * 0.6
+        return UIColor(red: 1.0, green: color, blue: 0.0, alpha: 1.0)
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell,
+                            forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = colorForIndex(indexPath.row)
+    }*/
+    
 }
