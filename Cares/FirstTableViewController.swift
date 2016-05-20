@@ -19,15 +19,15 @@ class FirstTableViewController: UITableViewController {
 
         // Do any additional setup after loading the view.
         
-        FirstTableArray = ["First", "Second", "Third", "Fourth"]
+        FirstTableArray = ["ศีรษะ", "ลำตัวส่วนบน", "ลำตัวส่วนล่าง", "ทั่วไป"]
         
         SecondArray =
-            [SecondTable(SecondTitle: ["FirstFirst", "SecondFirst", "ThirdFirst"]),
-            SecondTable(SecondTitle: ["FirstSecond", "SecondSecond", "ThirdSecond"]),
-                SecondTable(SecondTitle: ["FirstThird", "SecondThird", "ThirdThird"]),
-                SecondTable(SecondTitle: ["FirstFourth"])]
+            [SecondTable(SecondTitle: ["สมองอักเสบ", "เนื้องอกในสมอง", "ปวดศีรษะจากความเครียด"]),
+            SecondTable(SecondTitle: ["มะเร็งตับ", "ปอดอักเสบ", "กระเพาะอักเสบ"]),
+                SecondTable(SecondTitle: ["ต่อมน้ำเหลืองอักเสบ", "กระเพาะปัสสาวะอักเสบ", "ข้อเสื่อม"]),
+                SecondTable(SecondTitle: ["ไข้"])]
         
-        ThirdArray = [ThirdView(ThirdViewArray: ["aaaa","bbbb","cccc"]),
+        ThirdArray = [ThirdView(ThirdViewArray: ["สมองอักเสบ (Encephalitis)\r\n\r\nเป็นโรคที่พบได้ทั้งในเด็กและผู้ใหญ่ สาเหตุเกิดจากเชื้อไวรัส ซึ่งมีอยู่หลายชนิดที่พบบ่อยคือ B Virus ซึ่งปกติอาศัยอยู่ในสัตว์เลี้ยง เช่น หมู แพะ ม้า เป็นต้น ติดต่อถึงคนนโดยยุงรำคาญ(culex)\r\n\r\nอาการ\r\n\r\nมีใช้สูงอย่างเฉียบพลัน ปวดศีรษะ อ่อนเพลีย คลื่นไส้ อาเจียน ผู้ป่วยอาจจะซึมลงเรื่อยๆ จนไม่รู้สึกตัว อาจมีอาการชักร่วมด้วย\r\n\r\nสิ่งที่ตรวจพบ\r\n\r\nไข้สูง ซึม หรือหมดสติ deep tender refax ไวกว่าปกติ อาจมีมือสั่น หรืออาการอัมพาตของแขนและขา\r\n\r\nการรักษา\r\n\r\nหากสงสัย ให้รีบส่งแพทย์ ซึ่งอาจจะวินิจฉัยโรคโดยการเจาะหลัง(lumbar puncture) เพื่อตรวจน้ำไขสันหลัง และอาจจะต้องตรวจคลื่นสมองต่อไป","bbbb","cccc"]),//user \r\n in new line
             ThirdView(ThirdViewArray: ["dddd","eeee","ffff"]),
             ThirdView(ThirdViewArray: ["gggg","hhhh","iiii"]),
             ThirdView(ThirdViewArray: ["jjjj"])]
